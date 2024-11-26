@@ -6,7 +6,7 @@ n = int(nput())
 for in range(n):
     user_input = input().split()
     command = f'{user_input[0]} {user_input[1]}'
-    numbers = [number for number in user_input[2:]]
+    numbers = [int(number) for number in user_input[2:]]
 
     if command == 'Add First':
         seta.update(numbers)
